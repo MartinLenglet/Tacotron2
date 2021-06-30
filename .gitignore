@@ -1,1 +1,5 @@
 README_NVIDIA.md
+saved_models/*
+waveglow/waveglow_NEB.pt
+_WAVEGLOW/*
+_WAV/*

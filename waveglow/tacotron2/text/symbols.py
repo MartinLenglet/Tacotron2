@@ -11,10 +11,8 @@ _punctuation = '!\'(),.:;? '
 _special = '-'
 _letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
 
-_cfrench = '[]§«»ÀÂÇÉÊÎÔàâæçèéêëîïôùûü¬~"' # gb: new symbols for turntaking & ldots, [] are for notes, " for new terms.
-
-# Prepend "@" to phonetic symbols to ensure uniqueness (some are the same as lower letters):
+# Prepend "@" to ARPAbet symbols to ensure uniqueness (some are the same as uppercase letters):
 _arpabet = ['@' + s for s in cmudict.valid_symbols]
 
 # Export all symbols:
-symbols = [_pad] + list(_special) + list(_punctuation) + list(_letters) + list(_cfrench) + _arpabet + list('#') #GB add mark for emphasis
+symbols = [_pad] + list(_special) + list(_punctuation) + list(_letters) + _arpabet

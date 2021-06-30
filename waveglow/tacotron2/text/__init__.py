@@ -71,8 +71,4 @@ def _arpabet_to_sequence(text):
 
 
 def _should_keep_symbol(s):
-    if s not in symbols:
-        log(">> Symbol error")
-        warnings.warn("The Character is not in the symbols list")
-        log("The Character: '{}' is not in the symbols list".format(s.encode('utf8', 'replace'))) 
-    return s in _symbol_to_id and s is not '_' 
+  return s in _symbol_to_id and s is not '_' and s is not '~'
